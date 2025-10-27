@@ -1,0 +1,7 @@
+benchmarks:
+  - id: wiki_basic
+    description: "Factual questions via Wikipedia"
+    tests:
+      - input: "What is Python (programming language)?"
+        references:
+          - "Python is a high-level programming language."
