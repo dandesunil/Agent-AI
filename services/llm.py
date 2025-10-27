@@ -18,7 +18,7 @@ class MistralLangGraphAgent:
         self.hf_token = HF_API_KEY
         self.llm = HuggingFacePipeline.from_model_id(
             # model_id="gpt2",
-            model_id="microsoft/Phi-3-mini-4k-instruct",
+            model_id=HF_MODEL,
             task="text-generation",
             device=-1,  # Use CPU
             pipeline_kwargs={"temperature": 0.3, "max_new_tokens": 512}
